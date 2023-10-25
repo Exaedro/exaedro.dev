@@ -1,0 +1,72 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: rgb(30, 30, 30);
+    --text: #fff;
+}
+
+#root {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@font-face {
+    font-family: 'Franxurter';
+    src: url('../../public/fonts/fran.ttf');
+}
+
+body {
+    font-family: 'Franxurter', system-ui, sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* Maximos */
+
+@media (max-width: 768px) {
+    .aboutme article {
+        flex-direction: column;
+    }
+}
+
+/* Minimos */
+
+@media (min-width: 100px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (min-width: 576px) {
+    .container {
+        width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+}

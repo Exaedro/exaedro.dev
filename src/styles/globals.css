@@ -1,0 +1,217 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Franxurter';
+    src: url('../../public/fonts/fran.ttf');
+}
+/* 
+@font-face {
+    font-family: 'Super Plants';
+    src: url('./fonts/superplants.ttf');
+} */
+
+body {
+    font-family: 'Franxurter', system-ui;
+    color: #fff;
+    background-color: rgb(30, 30, 30);
+    scrollbar-gutter: stable;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 95, 239);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: rgb(255, 142, 244);
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.bubble-blue {
+    display: inline-block;
+    position: absolute;
+    top: -150px;
+    left: 30px;
+    filter: blur(120px) opacity(30%);
+    width: 500px;
+    height: 500px;
+    background: #2583ff;
+    border-radius: 100%;
+}
+
+.bubble-pink {
+    position: absolute;
+    top: 120px;
+    right: -100px;
+    overflow: hidden;
+    filter: blur(120px) opacity(30%);
+    width: 500px;
+    height: 500px;
+    background: #ed85ff;
+    border-radius: 100%;
+}
+
+.waves {
+    position: relative;
+    opacity: 10%;
+}
+
+.waves svg {
+    position: absolute;
+}
+
+.waves svg:nth-child(1) {
+    top: 0;
+}
+
+.waves svg:nth-child(2) {
+    top: 400px;
+}
+
+.green-gradient {
+    background-color: rgb(33, 33, 33);
+    background: linear-gradient(90deg, rgb(56, 244, 94), rgb(95, 252, 255));
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.blue-gradient {
+    background-color: rgb(33, 33, 33);
+    background: linear-gradient(90deg, rgb(56, 134, 244), rgb(255, 146, 248));
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.red-gradient {
+    background-color: rgb(33, 33, 33);
+    background: linear-gradient(90deg, rgb(255, 91, 91), rgb(189, 66, 255));
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.pink-gradient {
+    background: linear-gradient(90deg, rgb(255, 95, 244), rgb(255, 188, 65));
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.yellow-gradient {
+    background: linear-gradient(90deg, rgb(255, 188, 65), rgb(255, 95, 244));
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+/* Max */
+
+@media (max-width: 575px) {
+
+}
+
+@media (max-width: 576px) {
+    .contact {
+        width: 450px!important;
+    }
+    .aboutme img {
+        width: 350px;
+    }
+
+    .aboutme p {
+        text-align: center;
+        font-size: 40px!important;
+    }
+
+    .home .text {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .container {
+        width: 100%;
+        margin: 15px
+    }
+}
+
+@media (max-width: 768px) {
+    .project header {
+        height: 280px!important;
+        min-width: 100%!important;
+        max-width: 100%!important;
+    }
+    .contact {
+        width: 540px;
+    }
+}
+
+@media (max-width: 992px) {
+    .nav-body {
+        display: none;
+    }
+    .project:nth-child(odd) {
+        flex-direction: column!important;
+    }
+    .project h2, .project p {
+        margin-top: 25px!important;
+    }
+    .projects .project, .aboutme article {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .bubble-blue, .bubble-pink, .waves {
+        display: none;
+    }
+    .github {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    
+}
+
+/* Min */
+
+
+@media (min-width: 576px) {
+    .container {
+        width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+}
