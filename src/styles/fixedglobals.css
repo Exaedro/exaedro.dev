@@ -34,6 +34,31 @@ body {
 /* Maximos */
 
 @media (max-width: 768px) {
+    .contact {
+        width: 100%!important;
+    }
+    .aboutme img {
+        width: 100%;
+    }
+    .aboutme p {
+        font-size: 34px!important;
+    }
+}
+
+@media (max-width: 992px) {
+    .project {
+        flex-direction: column!important;
+        height: 600px!important;
+    }
+
+    .project header {
+        overflow: auto!important;
+    }
+
+    .project h2 {
+        margin-top: 30px;
+    }
+
     .aboutme article {
         flex-direction: column;
     }
@@ -44,6 +69,9 @@ body {
 @media (min-width: 100px) {
     .container {
         width: 100%;
+    }
+    .nav-body {
+        display: none;
     }
 }
 

@@ -56,7 +56,8 @@ nav li {
 /* ////////////////////////////////////////////////////////////////////////// */
 
 .aboutme {
-    margin-top: 100px;
+    margin-top: 300px;
+    margin-bottom: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -82,4 +83,147 @@ nav li {
 .aboutme p {
     font-size: 48px;
     text-wrap: balance;
+}
+
+/* ////////////////////////////////////////////////////////////////////////// */
+
+.projects h3 {
+    font-size: 38px;
+    font-family: 'Montserrat', system-ui, sans-serif;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    height: 300px;
+}
+
+.project .project-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.project:nth-child(odd) {
+    flex-direction: row-reverse;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.projects h2 {
+    font-size: 60px;
+}
+
+.project p {
+    margin-top: 30px;
+    font-size: 50px;
+    text-wrap: balance;
+}
+
+.project .github {
+    position: absolute;
+    right: 10px;
+    bottom: 3px;
+}
+
+.project .github img {
+    width: 55px;
+}
+
+.project header {
+    overflow: hidden;   
+    border-radius: 12px;
+    height: 300px;
+    position: relative;
+}
+
+.project img {
+    object-fit: cover;
+    width: 100%;
+}
+
+/* ////////////////////////////////////////////////////////////////////////// */
+
+.contact {
+    margin-top: 300px;
+    margin-bottom: 150px;
+    width: 600px;
+}
+
+
+.contact h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.contact label {
+    font-size: 32px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input {
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 12px;
+    border-radius: 5px;
+    margin: 12px 0px;
+    font-size: 22px;
+    color: #fff;
+}
+
+.contact input:focus, .contact input:active {
+    border: 2px solid;
+}
+
+.contact textarea {
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 12px;
+    border-radius: 5px;
+    margin: 12px 0px;
+    font-size: 22px;
+    color: #fff;
+    resize: vertical;
+    min-height: 60px;
+    max-height: 400px;
+}
+
+.contact input:focus, .contact input:active {
+    border: 2px solid;
+}
+
+.contact button {
+    background-color: transparent;
+    font-size: 22px;
+    cursor: pointer;
+    display: inline;
+    border-radius: 50em;
+    width: 200px;
+    padding: 10px;
+    margin-top: 10px;
+    color: #fff;
+    border: 2px solid rgb(101, 101, 255);
+    transition: background 0.2s ease;
+}
+
+.contact button:hover {
+    background-color: rgb(101, 101, 255);
+}
+
+/* /////////////////////////// Footer /////////////////////////// */
+
+.footer {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', system-ui, sans-serif;
 }

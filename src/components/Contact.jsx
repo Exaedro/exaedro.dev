@@ -2,7 +2,7 @@ export function Contact() {
     return (
         <>
             <div className="bubble-pink"></div>
-            <section className="contact">
+            <section className="contact container">
                 <h2 className="yellow-gradient">Contact me!</h2>
                 <form>
                     <label>Name</label>

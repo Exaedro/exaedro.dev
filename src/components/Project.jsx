@@ -5,7 +5,7 @@ export function Project({ name, description, link, gitHub, cover, gradient }) {
         <article className="project">
             <header>
                 <a href={link} rel="noreferrer" target="_blank">
-                    <img src={cover} alt="Exa-library-api" />
+                    <img src={cover} alt={name} />
                 </a>
                 <a
                     className="github"

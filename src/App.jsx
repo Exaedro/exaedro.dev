@@ -13,9 +13,9 @@ export function App() {
       <Navbar />
       <Home />
       <Aboutme />
-      {/*<ProjectsContainer />
+      <ProjectsContainer />
       <Contact />
-      <Footer /> */}
+      <Footer />
     </>
   );
 }
