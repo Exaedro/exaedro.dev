@@ -132,6 +132,9 @@ body {
     .bubble-pink {
         display: none;
     }
+    .aboutme img {
+        width: 270px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -140,7 +143,7 @@ body {
     }
     .home .text {
         margin-top: 150px;
-        font-size: 52px;
+        font-size: 46px;
         text-wrap: balance;
         text-align: center;
     }
@@ -151,6 +154,15 @@ body {
         font-size: 34px!important;
         text-align: center;
     }
+
+    .projects h2 {
+        font-size: 48px!important;
+    }
+    
+    .project p {
+        font-size: 36px!important;
+    }
+    
 }
 
 @media (max-width: 992px) {
