@@ -1,10 +1,12 @@
-import arrow from "../img/arrow.webp";
+import arrow from "../img/arrow.webp"
+import mina from "../img/mina.png"
 
 export function Home() {
     return (
         <>
             <div className="bubble-blue"></div>
             <div className="bubble-pink"></div>
+            <img className="img-background" src={mina} alt="" />
             <main className="home container">
                 <div className="text">
                     <h3>Hi! I'm</h3>

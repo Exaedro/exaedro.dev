@@ -5,17 +5,19 @@ import { Aboutme } from "./components/Aboutme";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 
-import './styles/fixedmain.css'
+import './styles/main.css'
 
 export function App() {
   return (
     <>
       <Navbar />
-      <Home />
-      <Aboutme />
-      <ProjectsContainer />
-      <Contact />
-      <Footer />
+      <div className="containerPrin">
+        <Home />
+        <Aboutme />
+        <ProjectsContainer />
+        <Contact />
+        <Footer />
+      </div>
     </>
   );
 }

@@ -24,33 +24,35 @@ export function ProjectsContainer() {
                     ></path>
                 </svg>
             </div> */}
-            <section className="projects container" id="projects">
-                <h3>Projects</h3>
-                <Project
-                    name="Exa-library-api"
-                    description="An api of books for libraries."
-                    gitHub="https://github.com/exaedro/library-api"
-                    cover={project1}
-                    link="https://library-api-roan.vercel.app/"
-                    gradient="green-gradient"
-                />
-                <Project
-                    name="NeeScan"
-                    description="Template for series or manga pages."
-                    gitHub="https://github.com/Exaedro/NeeScan-V3"
-                    cover={project2}
-                    link="https://neescan.vercel.app/"
-                    gradient="red-gradient"
-                />
-                <Project
-                    name="Von Neumann Conversor"
-                    description="A conversor of von neumann instructions."
-                    gitHub="https://github.com/Exaedro/VN-Architecture-Conversor"
-                    cover={project3}
-                    link="https://neescan.vercel.app/"
-                    gradient="blue-gradient"
-                />
-            </section>
+            <div className="separator">
+                <section className="projects container" id="projects">
+                    <h3 className="underline">Projects</h3>
+                    <Project
+                        name="Exa-library-api"
+                        description="An api of books for libraries."
+                        gitHub="https://github.com/exaedro/library-api"
+                        cover={project1}
+                        link="https://library-api-roan.vercel.app/"
+                        gradient="green-gradient"
+                    />
+                    <Project
+                        name="NeeScan"
+                        description="Template for series or manga pages."
+                        gitHub="https://github.com/Exaedro/NeeScan-V3"
+                        cover={project2}
+                        link="https://neescan.vercel.app/"
+                        gradient="red-gradient"
+                    />
+                    <Project
+                        name="Von Neumann Conversor"
+                        description="A conversor of von neumann instructions."
+                        gitHub="https://github.com/Exaedro/VN-Architecture-Conversor"
+                        cover={project3}
+                        link="https://neescan.vercel.app/"
+                        gradient="blue-gradient"
+                    />
+                </section>
+            </div>
         </>
     );
 }
