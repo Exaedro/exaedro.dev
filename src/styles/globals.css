@@ -135,6 +135,9 @@ body {
     .aboutme img {
         width: 270px;
     }
+    .img-background {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
